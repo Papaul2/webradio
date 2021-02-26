@@ -9,5 +9,7 @@ Installer une version Debian Mate en étant connecté à Internet pour avoir tou
 Télécharger un script (voir dépot), lui donner les droits d'execution et le lancer SANS les droits root (avec un utilisateur ayant les droits sudo).
 ou bien copier / coller cette commande dans un terminal :
 
-wget https://github.com/Papaul2/webradio/raw/main/postinstall/installwrv2.sh && chmod +x ./installwrv2.sh && ./installwrv2.sh
+wget https://github.com/Papaul2/webradio/raw/master/postinstall/installwrv2.sh && chmod +x ./installwrv2.sh && ./installwrv2.sh
+
+test
 

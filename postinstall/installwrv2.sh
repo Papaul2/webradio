@@ -27,7 +27,7 @@ if [ -d "$HOME/.config/rncbc.org" ]; then rm -rf "$HOME/.config/rncbc.org"; fi
 # Ajout des fichiers de config
 TMPHOME=$(mktemp -d)
 cd "$TMPHOME"
-wget wget https://github.com/Papaul2/webradio/archive/main.zip
+wget wget https://github.com/Papaul2/webradio/archive/master.zip
 unzip main.zip
 cp -R webradio-main/postinstall/config/.jackdrc "$HOME/"
 cp -R webradio-main/postinstall/config/* "$HOME/.config/"
@@ -42,11 +42,11 @@ TMPDIR=$(mktemp -d)
 cd "$TMPDIR"
 wget https://download.tuxfamily.org/librazik/decepas/librazik-keyring_2_all.deb
 wget https://download.tuxfamily.org/librazik/decepas/librazik-apt_2_all.deb
-wget https://github.com/Papaul2/webradio/raw/main/postinstall/webradiov2.sh
-wget https://github.com/Papaul2/webradio/raw/main/postinstall/webradiov2.desktop
-wget https://github.com/Papaul2/webradio/raw/main/postinstall/config/conky.desktop
-wget https://github.com/Papaul2/webradio/raw/main/postinstall/config/.conkyrc
-wget https://github.com/Papaul2/webradio/raw/main/postinstall/config/icecast.xml
+wget https://github.com/Papaul2/webradio/raw/master/postinstall/webradiov2.sh
+wget https://github.com/Papaul2/webradio/raw/master/postinstall/webradiov2.desktop
+wget https://github.com/Papaul2/webradio/raw/master/postinstall/config/conky.desktop
+wget https://github.com/Papaul2/webradio/raw/master/postinstall/config/.conkyrc
+wget https://github.com/Papaul2/webradio/raw/master/postinstall/config/icecast.xml
 
 
 # On passe root !
