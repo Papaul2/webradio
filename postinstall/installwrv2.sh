@@ -29,11 +29,11 @@ mkdir $HOME/tmpinstall
 TMPHOME=$HOME/tmpinstall
 cd "$TMPHOME"
 wget wget https://github.com/Papaul2/webradio/archive/master.zip
-unzip main.zip
-cp -R webradio-main/postinstall/config/.jackdrc "$HOME/"
-cp -R webradio-main/postinstall/config/* "$HOME/.config/"
+unzip master.zip
+cp -R webradio-master/postinstall/config/.jackdrc "$HOME/"
+cp -R webradio-master/postinstall/config/* "$HOME/.config/"
 mkdir -p "$HOME/.local/share/applications"
-mv webradio-main/postinstall/webradiov2.desktop "$HOME/.local/share/applications/"
+mv webradio-master/postinstall/webradiov2.desktop "$HOME/.local/share/applications/"
 chmod +x "$HOME/.local/share/applications/webradiov2.desktop"
 cd -
 
@@ -75,10 +75,10 @@ chmod +x conky.desktop && \
 mv .conkyrc $HOME/ && \
 mv conky.desktop $HOME/.config/autostart/ && \
 mkdir -p -v /usr/share/webradio/images && \
-cp -v $TMPHOME/webradio-main/postinstall/config/images/* /usr/share/webradio/images/ && \
+cp -v $TMPHOME/webradio-master/postinstall/config/images/* /usr/share/webradio/images/ && \
 mkdir -p -v /usr/share/wallpapers/webradio && \
-cp -v $TMPHOME/webradio-main/postinstall/config/wallpapers/* /usr/share/wallpapers/webradio/ 
-cp -v $TMPHOME/webradio-main/postinstall/config/icecast.xml /etc/icecast2/ 
+cp -v $TMPHOME/webradio-master/postinstall/config/wallpapers/* /usr/share/wallpapers/webradio/ 
+cp -v $TMPHOME/webradio-master/postinstall/config/icecast.xml /etc/icecast2/ 
 cp -v $HOME/.local/share/applications/webradiov2.desktop $HOME/Bureau/"
 
 # Nettoyage
