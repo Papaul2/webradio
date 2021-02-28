@@ -25,7 +25,8 @@ if [ -d "$HOME/.config/idjc" ]; then rm -rf "$HOME/.config/idjc"; fi
 if [ -d "$HOME/.config/rncbc.org" ]; then rm -rf "$HOME/.config/rncbc.org"; fi
 
 # Ajout des fichiers de config
-TMPHOME=$(mktemp -d)
+mkdir $HOME/tmpinstall/
+TMPHOME=$HOME/tmpinstall/
 cd "$TMPHOME"
 wget wget https://github.com/Papaul2/webradio/archive/master.zip
 unzip main.zip
@@ -38,7 +39,8 @@ cd -
 
 
 # Ajout des dépots Librazik
-TMPDIR=$(mktemp -d)
+mkdir $HOME/tmpinstall2
+TMPDIR=$HOME/tmpinstall2
 cd "$TMPDIR"
 wget https://download.tuxfamily.org/librazik/decepas/librazik-keyring_2_all.deb
 wget https://download.tuxfamily.org/librazik/decepas/librazik-apt_2_all.deb
