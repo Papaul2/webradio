@@ -25,8 +25,8 @@ if [ -d "$HOME/.config/idjc" ]; then rm -rf "$HOME/.config/idjc"; fi
 if [ -d "$HOME/.config/rncbc.org" ]; then rm -rf "$HOME/.config/rncbc.org"; fi
 
 # Ajout des fichiers de config
-mkdir $HOME/tmpinstall/
-TMPHOME=$HOME/tmpinstall/
+mkdir $HOME/tmpinstall
+TMPHOME=$HOME/tmpinstall
 cd "$TMPHOME"
 wget wget https://github.com/Papaul2/webradio/archive/master.zip
 unzip main.zip
