@@ -79,7 +79,8 @@ cp -v $TMPHOME/webradio-master/postinstall/config/images/* /usr/share/webradio/i
 mkdir -p -v /usr/share/wallpapers/webradio && \
 cp -v $TMPHOME/webradio-master/postinstall/config/wallpapers/* /usr/share/wallpapers/webradio/ 
 cp -v $TMPHOME/webradio-master/postinstall/config/icecast.xml /etc/icecast2/ 
-cp -v $HOME/.local/share/applications/webradiov2.desktop $HOME/Bureau/"
+cp -v $HOME/.local/share/applications/webradiov2.desktop $HOME/Bureau/
+chmod +x $HOME/Bureau/webradiov2.desktop/"
 
 # Nettoyage
 cd -
