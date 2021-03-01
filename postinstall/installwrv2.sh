@@ -68,7 +68,7 @@ dpkg -i librazik-apt_2_all.deb && \
 rm librazik-keyring_2_all.deb && \
 rm librazik-apt_2_all.deb && \
 apt-get update && apt-get --yes upgrade && \
-apt-get install --reinstall --yes idjc qjackctl linux-image-4.9.0-8-lzk-bl-amd64 unzip yad icecast2 && \
+apt-get install --reinstall --yes idjc qjackctl linux-image-4.9.0-8-lzk-bl-amd64 unzip yad icecast2 conky-all && \
 chmod +x webradiov2.sh && \
 mv webradiov2.sh /usr/local/bin/ && \
 chmod +x conky.desktop && \
@@ -94,4 +94,5 @@ echo "Un lanceur \"CEMEA Webradio\" a été ajouté dans le menu !"
 # Ajout de la documentation
 
 #  Ajout du fond d'écran
-dconf write /org/mate/desktop/background/picture-filename "'/usr/share/wallpapers/webradio/webradio_fond.png'"
+gsettings set org.mate.background picture-filename /usr/share/wallpapers/webradio/webradio_fond.png
+#dconf write /org/mate/desktop/background/picture-filename "'/usr/share/wallpapers/webradio/webradio_fond.png'"
