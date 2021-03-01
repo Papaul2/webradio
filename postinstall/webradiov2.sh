@@ -38,10 +38,10 @@ function reinitialiser {
 	if [ -d "$HOME/.config/rncbc.org" ]; then rm -rf "$HOME/.config/rncbc.org"; fi
 	TMPHOME=$(mktemp -d)
 	cd "$TMPHOME"
-	wget wget https://github.com/Papaul2/webradio/archive/main.zip
-	unzip main.zip
-	cp -R webradio-main/postinstall/config/.jackdrc "$HOME/"
-	cp -R webradio-main/postinstall/config/* "$HOME/.config/"
+	wget wget https://github.com/Papaul2/webradio/archive/master.zip
+	unzip master.zip
+	cp -R webradio-master/postinstall/config/.jackdrc "$HOME/"
+	cp -R webradio-master/postinstall/config/* "$HOME/.config/"
 	cd -
 	rm -rf "$TMPHOME"
 }
