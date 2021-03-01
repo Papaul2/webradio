@@ -36,6 +36,7 @@ conky.config = {
     own_window_transparent = false,
     own_window_argb_value = 200,
     total_run_times = 0,
+    double_buffer = true,
     show_graph_range = false
 }
 

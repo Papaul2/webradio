@@ -78,8 +78,10 @@ mv conky.desktop $HOME/.config/autostart/ && \
 mkdir -p -v /usr/share/webradio/images && \
 cp -v $TMPHOME/webradio-master/postinstall/config/images/* /usr/share/webradio/images/ && \
 mkdir -p -v /usr/share/wallpapers/webradio && \
-cp -v $TMPHOME/webradio-master/postinstall/config/wallpapers/* /usr/share/wallpapers/webradio/ 
-cp -v $TMPHOME/webradio-master/postinstall/config/icecast.xml /etc/icecast2/"
+cp -v $TMPHOME/webradio-master/postinstall/config/wallpapers/* /usr/share/wallpapers/webradio/ && \
+cp -v $TMPHOME/webradio-master/postinstall/config/icecast.xml /etc/icecast2/ && \
+cp -v $TMPHOME/webradio-master/postinstall/config/wallpapers/webradio_fond.png /boot/grub/ && \
+update-grub"
 
 # Nettoyage
 cd -
