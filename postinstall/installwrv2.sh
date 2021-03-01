@@ -34,6 +34,8 @@ cp -R webradio-master/postinstall/config/* "$HOME/.config/"
 mkdir -p "$HOME/.local/share/applications"
 mv webradio-master/postinstall/webradiov2.desktop "$HOME/.local/share/applications/"
 chmod +x "$HOME/.local/share/applications/webradiov2.desktop"
+cp "$HOME/.local/share/applications/webradiov2.desktop $HOME/Bureau/"
+chmod +x "$HOME/Bureau/webradiov2.desktop/"
 cd -
 
 
@@ -71,14 +73,13 @@ chmod +x webradiov2.sh && \
 mv webradiov2.sh /usr/local/bin/ && \
 chmod +x conky.desktop && \
 mv .conkyrc $HOME/ && \
+mkdir $HOME/.config/autostart/ && \
 mv conky.desktop $HOME/.config/autostart/ && \
 mkdir -p -v /usr/share/webradio/images && \
 cp -v $TMPHOME/webradio-master/postinstall/config/images/* /usr/share/webradio/images/ && \
 mkdir -p -v /usr/share/wallpapers/webradio && \
 cp -v $TMPHOME/webradio-master/postinstall/config/wallpapers/* /usr/share/wallpapers/webradio/ 
-cp -v $TMPHOME/webradio-master/postinstall/config/icecast.xml /etc/icecast2/ 
-cp -v $HOME/.local/share/applications/webradiov2.desktop $HOME/Bureau/
-chmod +x $HOME/Bureau/webradiov2.desktop/"
+cp -v $TMPHOME/webradio-master/postinstall/config/icecast.xml /etc/icecast2/"
 
 # Nettoyage
 cd -
